@@ -1,5 +1,5 @@
 streamlit==1.17.0
-ultralytics==8.3.107
+ultralytics==8.3.0
 opencv-python==4.10.0.84
 numpy==1.26.4
 Pillow==10.4.0
@@ -8,3 +8,4 @@ folium==0.17.0
 streamlit-folium==0.22.0
 torch==2.4.1
 torchvision==0.19.1
+altair==4.2.2
