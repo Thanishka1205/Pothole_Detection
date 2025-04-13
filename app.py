@@ -191,7 +191,7 @@ def is_pothole_detection_valid(results):
 
 def initialize_model():
     global model
-    DEFAULT_MODEL_PATH = Path("models/best_pothole_model.pt")
+    DEFAULT_MODEL_PATH = Path("best_pothole_model.pt")
     if model is None:
         if DEFAULT_MODEL_PATH.exists():
             model = load_model(DEFAULT_MODEL_PATH)
