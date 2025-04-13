@@ -9,3 +9,4 @@ streamlit-folium==0.22.0
 torch==2.4.1
 torchvision==0.19.1
 altair==4.2.2
+opencv-python 
