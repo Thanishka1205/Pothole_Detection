@@ -252,16 +252,16 @@ def process_directory(directory_path, model, confidence_threshold, iou_threshold
             with results_container:
                 col1, col2 = st.columns(2)
                 with col1:
-                    st.image(image, caption=f"Original: {image_file}", use_column_width=True)
+                    st.image(image, caption=f"Original: {image_file}", use_container_width=True)
                 with col2:
                     if num_potholes > 0:
                         boxes = [box.xyxy[0].cpu().numpy() for box in results[0].boxes]
                         plotted_img = plot_boxes(img_array, boxes)
                         st.image(plotted_img, 
                                 caption=f"Detected {num_potholes} pothole(s)", 
-                                use_column_width=True)
+                                use_container_width=True)
                     else:
-                        st.image(image, caption="No potholes detected", use_column_width=True)
+                        st.image(image, caption="No potholes detected", use_container_width=True)
                 
                 st.markdown("---")
             
